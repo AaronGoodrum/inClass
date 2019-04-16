@@ -9,6 +9,10 @@ function reverseString() {
   let reverseWord = ReverseLoop(str)
   
 
+  // method creates a Text Node with the specified text added to body of html
+  // let t = document.createTextNode("Here is your new word from : " + str +" > " + reverseWord);
+  // document.body.appendChild(t);
+
   return alert("Here is your new word : " + reverseWord);
 }
 
