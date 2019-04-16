@@ -1,5 +1,5 @@
 // Write a for loop that will iterate from 0 to 15
-for (var x=0; x<=15; x++) {
+for (let x=0; x<=15; x++) {
   // For each iteration check if the number is odd or even
   if (x === 0) {
           console.log(x +  " is even");
