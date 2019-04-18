@@ -2,7 +2,7 @@
 
 function longest_string(str) {
   //split array up to find the longest string
-  new_str = str.split(' ')
+  new_str = str.split(' ').replace(/[^0-9a-z]/gi, ' ')
   //will hold the longest string length
   let longestWord = 0
 
