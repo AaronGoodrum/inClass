@@ -5,11 +5,12 @@
 
 function FirstFactorial(num) { 
 let newNum = 1
+
 for(i = 1; i <= num; i++){
+  
   newNum = newNum * i   
 }
-num = newNum
-  return console.log(num);
+  return newNum;
   ; 
          
 }
