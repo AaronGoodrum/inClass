@@ -19,5 +19,4 @@ function longest_string(str) {
   console.log(new_str, longestWord, theword);
   
 }
-
-longest_string("The quick brown fox jumped over the lazy dog")
+longest_string('Today I learn something new in code')
