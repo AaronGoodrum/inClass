@@ -31,6 +31,12 @@ function RenderDish(props) {
             return false;
     }
 
+    const recognizeComment = ({ moveX, moveY, dx, dy }) => {
+        if ( dx > 200 )
+            return true;
+        else   
+            return false;
+    }
     const panResponder = PanResponder.create({
         onStartShouldSetPanResponder: (e, gestureState) => {
             return true;
@@ -55,7 +61,8 @@ function RenderDish(props) {
                     ],
                     { cancelable: false }
                 );
-
+            else if (recognizeComment(gestureState))
+                props.onShowModal();
             return true;
         }
     });
@@ -194,7 +201,7 @@ class DishDetail extends Component {
                             imageSize={40}
                             onFinishRating={(rating)=>this.setState({rating: rating})}
                             style={{ paddingVertical: 10 }}
-                        />
+                          />
                         <Input
                             placeholder=" Author"
                             leftIcon={{ type: 'font-awesome', name: 'user-o' }}
