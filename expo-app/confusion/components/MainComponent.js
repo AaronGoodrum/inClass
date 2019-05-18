@@ -117,7 +117,9 @@ const ReservationNavigator = createStackNavigator({
       headerLeft: <Icon name="menu" size={24}
         color='white'
         onPress={() => navigation.toggleDrawer()} />   
-
+      })
+    });
+    
 const FavoritesNavigator = createStackNavigator({
           Favorites: { screen: Favorites }
         }, {
